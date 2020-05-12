@@ -24,7 +24,6 @@
     "eslint": "4.18.2",
     "eslint-config-htmlacademy": "0.4.x"
   },
-
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
