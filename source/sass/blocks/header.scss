@@ -1,0 +1,103 @@
+body {
+  min-width: 1140px;
+  // background-color: #f7fafc;
+  // background-image: linear-gradient(to right, #fd712c 0%, #f21780 100%);
+}
+
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.header {
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 214px;
+  background-color: #f7fafc;
+  background-image: linear-gradient(to right, #fd712c 0%, #f21780 100%);
+  width: auto;
+
+  &::after {
+    display: block;
+    position: absolute;
+    content: '';
+    background: no-repeat url("/img/features-iphones.png");
+    width: 50%;
+    min-height: 628px;
+    top: 146px;
+    right: 3px;
+    background-position: 0 0;
+    background-size: cover;
+  }
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.header__logo {
+  display: block;
+}
+
+.nav__button {
+  display: block;
+  box-sizing: border-box;
+  width: 153px;
+  height: 35px;
+  padding: 2px 24px;
+  border: 5px solid transparent;
+
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #222222;
+  border-radius: 50px;
+  margin-top: 2px;
+  white-space: nowrap;
+
+
+  &:hover {
+    border: 5px solid rgba(0, 0, 0, 0.2);
+    color: rgba(34, 34, 34, 0.8);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.header__list {
+  min-width: 775px;
+  list-style: none;
+  margin: 0;
+  padding: 0 42px;
+  margin-top: 6px;
+
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.nav__link {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 28px;
+  padding-right: 28px;
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+.nav__item:last-of-type a {
+  padding-right: 0;
+}

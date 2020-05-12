@@ -1,0 +1,147 @@
+.slider {
+  background-color: #f7fafc;
+  padding-top: 118px;
+}
+
+.slider__wrapper {
+  max-width: 658px;
+  margin: 0 auto;
+  margin-bottom: 79px;
+}
+
+.slider__header {
+  font-family: "Dosis", "Arial", sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #222222;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.slider__text {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #777777;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.slider__pictures {
+  position: relative;
+  padding-bottom: 118px;
+}
+
+.slider__button {
+  width: 43px;
+  height: 43px;
+  border: none;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ffffff 65%, rgba(0, 0, 0, 0.1) 45%);
+
+  &:hover {
+    background: radial-gradient(circle, #fd712c 65%, rgba(0, 0, 0, 0.1) 45%);
+    cursor: pointer;
+  }
+
+  &:hover .slider__right::after {
+    content: "";
+    position: absolute;
+    background: no-repeat url("/img/arrow-white.png");
+    z-index: 10;
+    transform: scale(1, -1);
+    filter: FlipH;
+  }
+
+  &:hover .slider__left::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 7px;
+    background: no-repeat url("/img/arrow-white.png");
+    z-index: 20;
+    transform: scale(-1, 1);
+    filter: FlipH;
+  }
+}
+
+.slider__left {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 7px;
+    background: no-repeat url("/img/arrow.png");
+    z-index: 10;
+    top: -4px;
+    left: 8px;
+  }
+}
+
+.slider__right {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 7px;
+    background: no-repeat url("/img/arrow.png");
+    z-index: 10;
+    top: -4px;
+    left: 8px;
+    transform: scale(-1, 1);
+    filter: FlipH;
+  }
+}
+
+.right {
+  position: absolute;
+  top: 228px;
+  right: -71px;
+}
+
+.left {
+  position: absolute;
+  top: 228px;
+  left: -71px;
+}
+
+.slider__items {
+  display: grid;
+  grid-template-columns: 68px 127px 195px 360px 195px 127px 68px;
+  align-items: center;
+}
+
+.slider__items img {
+  box-shadow: 0 30px 40px rgba(0, 0, 0, 0.1);
+  background-color: #d70404;
+}
+
+.item__one,
+.item__seven {
+  object-fit: cover;
+  width: 262px;
+  height: 280px;
+}
+
+.item__two,
+.item__six {
+  object-fit: cover;
+  width: 127px;
+  height: 360px;
+}
+
+.item__three,
+.item__five {
+  object-fit: cover;
+  width: 195px;
+  height: 400px;
+}

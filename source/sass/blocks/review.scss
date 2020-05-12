@@ -1,0 +1,171 @@
+.review {
+  padding-top: 68px;
+  position: relative;
+  margin-bottom: 121px;
+}
+
+.review__header {
+  font-family: "Dosis", "Arial", sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #222222;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.review__description {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #777777;
+  max-width: 658px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 75px;
+}
+
+.review__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.review__item {
+  width: 360px;
+  height: 273px;
+  box-sizing: border-box;
+  padding: 36px 45px 40px 40px;
+  background-color: #f7fafc;
+
+  &:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+  }
+}
+
+.review__text {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #777777;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 23px;
+}
+
+.review__name {
+  font-family: "Dosis", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #222222;
+  margin: 0;
+  padding: 0;
+}
+
+.review__company {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #777777;
+  margin: 0;
+  padding: 0;
+}
+
+.review__about {
+  display: flex;
+  flex-direction: row;
+}
+
+.review__person {
+  padding-top: 16px;
+  padding-left: 20px;
+}
+
+
+
+.review__button {
+  width: 43px;
+  height: 43px;
+  border: none;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ffffff 65%, rgba(0, 0, 0, 0.1) 45%);
+
+  &:hover {
+    background: radial-gradient(circle, #fd712c 65%, rgba(0, 0, 0, 0.1) 45%);
+    cursor: pointer;
+  }
+
+  &:hover .arrow__right::after {
+    content: "";
+    position: absolute;
+    background: no-repeat url("/img/arrow-white.png");
+    z-index: 10;
+    transform: scale(1, -1);
+    filter: FlipH;
+  }
+
+  &:hover .arrow__left::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 7px;
+    background: no-repeat url("/img/arrow-white.png");
+    z-index: 20;
+    transform: scale(-1, 1);
+    filter: FlipH;
+  }
+}
+
+.arrow__left {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 7px;
+    background: no-repeat url("/img/arrow.png");
+    z-index: 10;
+    top: -4px;
+    left: 8px;
+  }
+}
+
+.arrow__right {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 7px;
+    background: no-repeat url("/img/arrow.png");
+    z-index: 10;
+    top: -4px;
+    left: 8px;
+    transform: scale(-1, 1);
+    filter: FlipH;
+  }
+}
+
+.review__right {
+  position: absolute;
+  top: 362px;
+  right: -71px;
+}
+
+.review__left {
+  position: absolute;
+  top: 362px;
+  left: -71px;
+}

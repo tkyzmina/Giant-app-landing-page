@@ -1,0 +1,165 @@
+.prices {
+  padding-top: 120px;
+  margin-bottom: 117px;
+}
+
+.prices__header {
+  font-family: "Dosis", "Arial", sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #222222;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.prices__text {
+  max-width: 658px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #777777;
+  display: block;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 77px;
+}
+
+.prices__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.prices__card {
+  position: relative;
+  width: 263px;
+  height: 481px;
+  background-color: #f7fafc;
+  padding-top: 12px;
+  box-sizing: border-box;
+  background-image: url("/img/bg.svg");
+  background-repeat: no-repeat;
+  background-position: 0 52px;
+
+  &:hover {
+    background-color: #ffffff;
+    background-image: url("/img/bg-grad.svg");
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+
+
+}
+
+.card__header {
+  font-family: "Dosis", "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #333333;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+.card__price {
+  font-family: "Dosis", "Arial", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 81px;
+  z-index: 10;
+}
+
+.card__sign {
+  font-family: "Dosis", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  color: #333333;
+  top: -1.2em;
+}
+
+.card__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-bottom: 39px;
+}
+
+.card__item {
+  position: relative;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #777777;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 4px;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 203px;
+    border-top: 1px dashed #eeeeee;
+    left: 34px;
+  }
+
+  &:first-of-type::before {
+    display: none;
+  }
+
+}
+
+.card__trial {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 23.95px;
+  color: #aaaaaa;
+  display: block;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 7px;
+
+  &:hover {
+    color: #333333;
+  }
+}
+
+.card__button {
+  width: 139px;
+  height: 40px;
+  display: block;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 23.95px;
+  color: #333333;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 8px 10px;
+
+  &:hover {
+    color: #ffffff;
+    background-image: linear-gradient(to right, #fd712c 0%, #f21780 100%);
+  }
+}
