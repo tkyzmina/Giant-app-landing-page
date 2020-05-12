@@ -106,7 +106,7 @@
   &:hover .arrow__right::after {
     content: "";
     position: absolute;
-    background: no-repeat url("/img/arrow-white.png");
+    background: no-repeat url("../img/arrow-white.png");
     z-index: 10;
     transform: scale(1, -1);
     filter: ""fliph;
@@ -117,7 +117,7 @@
     position: absolute;
     width: 15px;
     height: 7px;
-    background: no-repeat url("/img/arrow-white.png");
+    background: no-repeat url("../img/arrow-white.png");
     z-index: 20;
     transform: scale(-1, 1);
     filter: ""fliph;
@@ -132,7 +132,7 @@
     position: absolute;
     width: 15px;
     height: 7px;
-    background: no-repeat url("/img/arrow.png");
+    background: no-repeat url("../img/arrow.png");
     z-index: 10;
     top: -4px;
     left: 8px;
@@ -147,7 +147,7 @@
     position: absolute;
     width: 15px;
     height: 7px;
-    background: no-repeat url("/img/arrow.png");
+    background: no-repeat url("../img/arrow.png");
     z-index: 10;
     top: -4px;
     left: 8px;

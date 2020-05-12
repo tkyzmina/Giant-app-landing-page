@@ -2,19 +2,6 @@
   position: relative;
   padding-top: 103px;
   width: 100%;
-
-  // &::after {
-  //   display: block;
-  //   position: absolute;
-  //   content: '';
-  //   background: no-repeat url("/img/features-iphones.png");
-  //   width: 50%;
-  //   min-height: 628px;
-  //   top: 39px;
-  //   right: -195px;
-  //   background-position: 0 0;
-  //   background-size: cover;
-  // }
 }
 
 .nav-features__wrapper {
@@ -65,7 +52,7 @@
   &::before {
     content: "";
     position: absolute;
-    background: no-repeat url("/img/tick.png");
+    background: no-repeat url("../img/tick.png");
     width: 15px;
     height: 15px;
     top: 6px;
