@@ -52,8 +52,6 @@
     background-image: url("/img/bg-grad.svg");
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   }
-
-
 }
 
 .card__header {
@@ -112,7 +110,7 @@
 
   &::before {
     position: absolute;
-    content: '';
+    content: "";
     width: 203px;
     border-top: 1px dashed #eeeeee;
     left: 34px;
@@ -121,7 +119,6 @@
   &:first-of-type::before {
     display: none;
   }
-
 }
 
 .card__trial {

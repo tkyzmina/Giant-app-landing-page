@@ -91,8 +91,6 @@
   padding-left: 20px;
 }
 
-
-
 .review__button {
   width: 43px;
   height: 43px;
@@ -111,7 +109,7 @@
     background: no-repeat url("/img/arrow-white.png");
     z-index: 10;
     transform: scale(1, -1);
-    filter: FlipH;
+    filter: ""fliph;
   }
 
   &:hover .arrow__left::after {
@@ -122,7 +120,7 @@
     background: no-repeat url("/img/arrow-white.png");
     z-index: 20;
     transform: scale(-1, 1);
-    filter: FlipH;
+    filter: ""fliph;
   }
 }
 
@@ -154,7 +152,7 @@
     top: -4px;
     left: 8px;
     transform: scale(-1, 1);
-    filter: FlipH;
+    filter: ""fliph;
   }
 }
 
